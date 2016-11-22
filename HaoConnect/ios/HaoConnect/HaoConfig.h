@@ -14,4 +14,5 @@
 +(NSString *)getSecretHax;
 +(NSString *)getApiHost;
 +(NSString *)getClientVersion;
++(NSString *)getDeviceType;
 @end

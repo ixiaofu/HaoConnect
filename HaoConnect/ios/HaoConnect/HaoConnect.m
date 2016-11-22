@@ -86,7 +86,7 @@ static NSString * Checkcode   = @""; //Userid和Logintime组合加密后的产�
     [commonParams setObject:[HaoConfig getClientInfo]                                           forKey:@"Clientinfo"];
     [commonParams setObject:[HaoConfig getClientVersion]                                        forKey:@"Clientversion"];
     [commonParams setObject:Isdebug                                                             forKey:@"Isdebug"];
-    [commonParams setObject:Devicetype                                                          forKey:@"Devicetype"];
+    [commonParams setObject:[HaoConfig getDeviceType]                                           forKey:@"Devicetype"];
     [commonParams setObject:Devicetoken ? [NSString stringWithFormat:@"%@", Devicetoken]  : @"" forKey:@"Devicetoken"];
     [commonParams setObject:Requesttime ? [NSString stringWithFormat:@"%@", Requesttime]  : @"" forKey:@"Requesttime"];
     [commonParams setObject:Userid      ? [NSString stringWithFormat:@"%@", Userid]       : @"" forKey:@"Userid"];
